@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -21,9 +22,12 @@ public class GoogleScenarios extends TestBase {
 	  @BeforeTest public void StartBrowser()
 	  
 	  { 
-		  WebDriverManager.safaridriver().setup();
-			//.chromedriver().setup();
-			driver= new SafariDriver();
+		  
+		  System.out.println("---First test case running---");
+		  WebDriverManager//.edgedriver().setup();
+			.chromedriver().setup();
+			driver= new ChromeDriver();
+					//EdgeDriver();
 	  driver.manage().timeouts().implicitlyWait(0,TimeUnit.SECONDS);
 	  driver.get("https://www.amazon.com"); }
 	  
