@@ -32,7 +32,7 @@ public class GoogleScenarios extends TestBase {
 		  
 		  System.out.println("---First test case running---");
 		 // WebDriverManager.chromedriver().setup();
-			driver= new RemoteWebDriver(new URL("http://3.142.238.225:4444/"), caps);
+			driver= new RemoteWebDriver(new URL("http://3.144.225.146:4444/"), caps);
 					//EdgeDriver();
 	  driver.manage().timeouts().implicitlyWait(0,TimeUnit.SECONDS);
 	  driver.get("https://www.amazon.com"); }
