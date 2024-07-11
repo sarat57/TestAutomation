@@ -1,5 +1,6 @@
 package Objects;
 
+import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -15,7 +16,7 @@ public class TestBase {
 	
 	
 	@BeforeTest
-	public void StartBrowser()
+	public void StartBrowser() throws MalformedURLException
 	
 	{
 		WebDriverManager.safaridriver().setup();
